@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +31,16 @@
   <div id="score">Score: 0</div>
   <canvas id="game" width="512" height="512"></canvas>
   
+  <!-- audio now points to theme.mp3 in the root -->
   <audio id="themeTune" src="theme.mp3" autoplay></audio>
+  
+  <!-- game.js should likewise load your PNGs from the root:
+       e.g. in game.js:
+       appleImage.src   = 'apple.png';
+       bananaImage.src  = 'banana.png';
+       cherryImage.src  = 'cherry.png';
+       goobImage.src    = 'goob.png';
+  -->
   <script src="game.js"></script>
 </body>
 </html>
