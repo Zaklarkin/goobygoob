@@ -13,18 +13,18 @@ let score = 0;
 const scoreDisplay = document.getElementById("score");
 
 const eatSounds = [
-  new Audio('assets/eat1.mp3'),
-  new Audio('assets/eat2.mp3'),
-  new Audio('assets/eat3.mp3')
+  new Audio('eat1.mp3'),
+  new Audio('eat2.mp3'),
+  new Audio('eat3.mp3')
 ];
 
 
 const goobImg = new Image();
-goobImg.src = 'assets/goob.png';
+goobImg.src = 'goob.png';
 
 const fruitImgs = ["cherry.png", "banana.png", "apple.png"].map(src => {
   const img = new Image();
-  img.src = 'assets/' + src;
+  img.src = '' + src;
   return img;
 });
 let currentFruitImg = fruitImgs[0];
